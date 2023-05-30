@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { BsTelegram } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
 import { Slide } from "react-awesome-reveal";
+import home from "../../asset/home.png";
 
-const ProfComponent = () => {
+const Home = () => {
   return (
     <Container id="home">
       <Slide direction="left">
@@ -13,53 +15,75 @@ const ProfComponent = () => {
           <h4>
             Hello <span className="green">I'am</span>
           </h4>
-          <h1 className="green">Milad Amiri</h1>
-          <h3>UX/UI Designer and graphic designer</h3>
+          <h1 className="green">Yohannes Degu</h1>
+          <h3>FRONT END DEVELOPER</h3>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+            I am Software Developer with two plus years of experience in the
+            industry and possesses proficiency in multiple programming languages
+            and tools, such as React JS,Next JS, JavaScript, React Native, PHP
+            (CodeIgniter), TailwindCSS, Node JS (Express js), and Git/GitHub.
+            With his solid experience and strong problem-solving skills, works
+            well in teams, and has excellent communication skills. And also
+            highly motivated to continue learning and improving his skills.I
+            consistently deliver outstanding outcomes in every project
           </p>
-          <button>Let's talk</button>
+
           <Social>
-            <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="/">
-                  <AiOutlineInstagram />
+                <a href="https://github.com/Yohannes14" target="_blank" rel="noopener noreferrer">
+                  <AiFillGithub size={32} />
                 </a>
               </span>
               <span>
-                <a href="/">
-                  <GiEarthAmerica />
+                <a href="https://www.linkedin.com/in/yohannes-degu-300b70259/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedinIn size={32} />
                 </a>
               </span>
               <span>
-                <a href="/">
-                  <FaLinkedinIn />
+                <a href="https://web.telegram.org/k/#@Joh14D" target="_blank" rel="noopener noreferrer">
+                  <BsTelegram size={32} />
+                </a>
+              </span>
+              <span>
+                <a href="mailto:miladamiri@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                  <SiGmail size={32} />
                 </a>
               </span>
             </div>
           </Social>
+          <button>
+            {" "}
+            <a href="#contact">Let's talk</a>
+          </button>
+          <button>
+            {" "}
+            <a
+              href="https://drive.google.com/file/d/13mIzyyTEO7Zrs0cJJtBtnJPd4oZGZ_Vn/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Resume
+            </a>
+          </button>
         </Texts>
       </Slide>
       <Slide direction="right">
         <Profile>
-          <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
-            alt="profile"
-          />
+          <img src={home} alt="profile" />
         </Profile>
       </Slide>
     </Container>
   );
 };
 
-export default ProfComponent;
+export default Home;
 
 const Container = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
   padding-top: 3rem;
   width: 80%;
   max-width: 1280px;
@@ -92,11 +116,13 @@ const Texts = styled.div`
   }
   p {
     font-weight: 300;
+    font-size: 1.3rem;
   }
 
   button {
     padding: 0.7rem 2rem;
     margin-top: 3rem;
+    margin-right: 1rem;
     cursor: pointer;
     background-color: #01be96;
     border: none;
@@ -106,13 +132,17 @@ const Texts = styled.div`
     :hover {
       filter: drop-shadow(0px 10px 10px #01be9570);
     }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 `;
 const Social = styled.div`
   margin-top: 3rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   p {
     font-size: 0.9rem;
     @media (max-width: 690px) {
@@ -123,13 +153,13 @@ const Social = styled.div`
   .social-icons {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     span {
-      width: 2.3rem;
-      height: 2rem;
-      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #01be96;
+      width: 3rem;
+      height: 3rem;
+      background-color: #000;
       position: relative;
+      border-radius: 50px;
       transition: transform 400ms ease-in-out;
       :hover {
         transform: rotate(360deg);
@@ -147,7 +177,7 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
   img {
-    width: 25rem;
+    width: 20rem;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {

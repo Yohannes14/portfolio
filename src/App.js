@@ -1,24 +1,26 @@
 import styled from "styled-components";
 import Header from "./components/Banner/Header";
-import ProfComponent from "./components/Banner/ProfComponent";
 import Clients from "./components/Clients/Clients";
-import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
-import Services from "./components/Service/Services";
+import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
+import Home from "./components/Banner/Home";
+import Education from "./components/Education/Education";
 function App() {
   return (
     <Container>
       <Banner>
         <Header />
-        <ProfComponent />
+        <Home />
       </Banner>
-      <Services />
+      <Education/>
+      <Skills />
       <LightColor>
         <Projects />
       </LightColor>
       <Clients />
       <LightColor>
-        <Footer />
+        <Contact />
       </LightColor>
     </Container>
   );

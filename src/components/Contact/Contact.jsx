@@ -1,14 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { MdAlternateEmail } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
-import { FiMail, FiPhoneCall } from "react-icons/fi";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineArrowUp,
+  AiOutlineMail,
+} from "react-icons/ai";
+import { FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import { BsTelegram } from "react-icons/bs";
+import home from "../../asset/home.png";
 
-const Footer = () => {
+const Contact = () => {
   const scrollUp = () => {
     window.scroll({
       top: 0,
@@ -16,29 +20,28 @@ const Footer = () => {
     });
   };
   return (
-    <Container id="footer">
+    <Container id="contact">
       <Profile>
         <Slide direction="left" delay={1}>
-          <h1>Portfolio</h1>
+          <h1>Contact Me</h1>
         </Slide>
         <div className="address">
           <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
+            <h1>
+              Thank you for taking the time to review my portfolio. If you're
+              interested in discussing any of the projects or skills showcased
+              here, or have an opportunity you'd like to discuss, please don't
+              hesitate to contact me.
+            </h1>
           </Slide>
         </div>
         <div className="links">
-          <Slide direction="left">
-            <h1>Contact me directly:</h1>
-          </Slide>
           <div>
             <span>
               <FiPhoneCall />
             </span>
             <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
+              <a href="tel:+4733378901">+251935416737 </a>
             </Slide>
           </div>
           <div>
@@ -47,41 +50,56 @@ const Footer = () => {
                 <HiOutlineMailOpen />
               </span>
             </Slide>
-            <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+            <Slide direction="left">
+              <a href="mailto:miladamiri@gmail.com">
+                yohansdegu.2010@gmail.com
+              </a>
             </Slide>
           </div>
         </div>
         <div className="profiles">
-          <Slide direction="left">
-            <h1>Check my profiles</h1>
-          </Slide>
           <div className="icons">
             <Zoom>
               <span>
-                <a href="/">
-                  <AiFillGithub />
+                <a
+                  href="https://github.com/Yohannes14"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillGithub size={32} />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
-                  <AiFillLinkedin />
+                <a
+                  href="https://www.linkedin.com/in/yohannes-degu-300b70259/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillLinkedin size={32} />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
-                  <BsFacebook />
+                <a
+                  href="https://web.telegram.org/k/#@Joh14D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsTelegram size={32} />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
-                  <BsSlack />
+                <a
+                  href="mailto:miladamiri@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiOutlineMail size={32} />
                 </a>
               </span>
             </Zoom>
@@ -93,36 +111,14 @@ const Footer = () => {
           </ArrowUp>
         </Fade>
       </Profile>
-      <Form>
-        <Slide direction="right">
-          <form>
-            <div className="name">
-              <span>
-                <CgProfile />
-              </span>
-              <input type="text" placeholder="Fullname..." />
-            </div>
-            <div className="email">
-              <span>
-                <MdAlternateEmail />
-              </span>
-              <input type="email" placeholder="Email..." />
-            </div>
-            <div className="message">
-              <span className="messageIcon">
-                <FiMail />
-              </span>
-              <textarea cols="30" rows="10" placeholder="Message..."></textarea>
-            </div>
-            <button>Submit</button>
-          </form>
-        </Slide>
-      </Form>
+      <Image>
+        <img src={home} alt="profile" />
+      </Image>
     </Container>
   );
 };
 
-export default Footer;
+export default Contact;
 
 const Container = styled.div`
   margin-top: 2rem;
@@ -148,6 +144,7 @@ const Profile = styled.div`
     padding: 1rem 0;
     h1 {
       font-size: 1.2rem;
+      color: lightgray;
     }
 
     p {
@@ -172,6 +169,7 @@ const Profile = styled.div`
       a {
         text-decoration: none;
         color: lightgray;
+        font-size: 1.5rem;
         :hover {
           color: orange;
         }
@@ -188,14 +186,15 @@ const Profile = styled.div`
     .icons {
       display: flex;
       align-items: center;
+      margin-top: 2rem;
 
       span {
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #000;
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
         margin-right: 0.5rem;
         border-radius: 50px;
 
@@ -204,7 +203,7 @@ const Profile = styled.div`
         }
 
         a {
-          margin-top: 0.2rem;
+          margin-top: 0.3rem;
           color: #fff;
         }
       }
@@ -228,56 +227,26 @@ const ArrowUp = styled.div`
     top: 16rem;
   }
 `;
-const Form = styled.div`
-  flex: 1;
-  h1 {
-    font-size: 1.3rem;
-    padding-bottom: 0.7rem;
+const Image = styled.div`
+  img {
+    width: 20rem;
+    filter: drop-shadow(0px 10px 10px #01be9570);
+    transition: transform 400ms ease-in-out;
+    @media (max-width: 790px) {
+      width: 20rem;
+    }
+
+    @media (max-width: 660px) {
+      width: 18rem;
+    }
+
+    @media (max-width: 640px) {
+      width: 100%;
+      display: none;
+    }
   }
 
-  form {
-    background-color: #191923;
-    padding: 0.8rem;
-    border-radius: 5px;
-    .name,
-    .email,
-    .message {
-      display: flex;
-      border: 1px solid gray;
-      margin-bottom: 0.5rem;
-      input,
-      textarea {
-        width: 100%;
-        border: none;
-        outline: none;
-        color: #fff;
-        background-color: transparent;
-        padding: 1rem 0.5rem;
-      }
-      span {
-        background-color: #3e3e3e;
-        width: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .messageIcon {
-        align-items: flex-start;
-        padding-top: 0.5rem;
-      }
-    }
-
-    button {
-      width: 5rem;
-      height: 1.8rem;
-      background-color: #01be96;
-      border: none;
-      border-radius: 5px;
-      filter: drop-shadow(0px 4px 5px #01be9551);
-      cursor: pointer;
-      :hover {
-        filter: drop-shadow(0px 6px 9px #01be9551);
-      }
-    }
+  :hover img {
+    transform: translateY(-10px);
   }
 `;
