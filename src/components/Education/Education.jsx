@@ -23,6 +23,15 @@ const Education = () => {
               Object oriented (OOP) programming, AI, Networking.
             </li>
           </ul>
+          <h3>
+            <a
+              href="https://portal.aau.edu.et/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Website
+            </a>
+          </h3>
         </List>
       </Educations>
     </Container>
@@ -70,5 +79,16 @@ const List = styled.div`
   }
   h4 {
     padding-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  a {
+    color: #01be96;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 `;
