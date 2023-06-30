@@ -1,32 +1,7 @@
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
+import { data, project } from "../utils";
 
-const data = [
-  {
-    company: "Aaron habesha PLC",
-    position: "Frontend Developer",
-    date: "Apr 2023 -Jun 2023",
-    disc: `Designed and developed the frontend of a Shopping-based ecommerce website.
-          Collaborated with backend developers to integrate api. We use React JS with styling TailwindCSS and Material ui.`,
-    link: "https://google.com",
-  },
-  {
-    company: "Crossroads Tech solution PLC",
-    position: "Frontend Developer",
-    date: "Dec 2021 -Present",
-    disc: `Designed and developed the frontend of a Shopping-based ecommerce website.
-          Collaborated with backend developers to integrate api. We use React JS with styling TailwindCSS and Material ui.`,
-    link: "https://google.com",
-  },
-  {
-    company: "Aaron Habesha",
-    position: "Frontend Developer",
-    date: "Apr 2023 -Jun 2023",
-    disc: `Designed and developed the frontend of a Shopping-based ecommerce website.
-    Collaborated with backend developers to integrate api. We use React JS with styling TailwindCSS and Material ui.`,
-    link: "https://google.com",
-  },
-];
 
 const Projects = () => {
   return (
@@ -45,9 +20,22 @@ const Projects = () => {
             </div>
 
             <h4>{item.disc}</h4>
-            <h5>
-              <a href={item.link}>Visit Link</a>
-            </h5>
+            <h5>{/* <a href={item.link}>Visit Link</a> */}</h5>
+          </div>
+        ))}
+      </Project>
+      <Slide direction="down">
+        <h1>Portfolio</h1>
+      </Slide>
+      <Project>
+        {project.map((item, i) => (
+          <div key={i}>
+            <div>
+              <h1>{item.name}</h1>
+            </div>
+
+            <h4>{item.disc}</h4>
+            <h5><a href={item.link}>Visit LInk</a></h5>
           </div>
         ))}
       </Project>

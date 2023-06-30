@@ -13,7 +13,7 @@ const Home = () => {
       <Slide direction="left">
         <Texts>
           <h4>
-            Hello <span className="green">I'am</span>
+            Hello <span>I'am</span>
           </h4>
           <h1 className="green">Yohannes Degu</h1>
           <h3>FRONT END DEVELOPER</h3>
@@ -65,7 +65,7 @@ const Home = () => {
               rel="noopener noreferrer"
             >
               {" "}
-              Resume
+              Download CV
             </a>
           </button>
         </Texts>

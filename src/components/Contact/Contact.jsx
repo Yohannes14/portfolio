@@ -23,7 +23,7 @@ const Contact = () => {
     <Container id="contact">
       <Profile>
         <Slide direction="left" delay={1}>
-          <h1>Contact Me</h1>
+          <h1>GET IN TOUCH</h1>
         </Slide>
         <div className="address">
           <Slide direction="left">
