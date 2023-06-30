@@ -1,3 +1,14 @@
+import { FaNode, FaNpm, FaReact } from "react-icons/fa";
+import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
+import {
+  SiCodeigniter,
+  SiCss3,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
+
 export const data = [
   {
     company: "Aaron habesha PLC",
@@ -33,4 +44,53 @@ export const project = [
   },
 ];
 
-const pract = "https://www.udemy.com/certificate/UC-830a857a-eeb1-4211-83ad-c60bd02618f4/"
+const pract =
+  "https://www.udemy.com/certificate/UC-830a857a-eeb1-4211-83ad-c60bd02618f4/";
+
+export const skill = [
+  {
+    direction: "up",
+    Icon: AiFillHtml5,
+    title: "HTML",
+  },
+  {
+    direction: "up",
+    Icon: SiCss3,
+    title: "CSS",
+  },
+  {
+    direction: "right",
+    Icon: FaReact,
+    title: "React JS/Native",
+  },
+  {
+    direction: "right",
+    Icon: FaReact,
+    title: "Next JS",
+  },
+
+  { direction: "right", Icon: SiRedux, title: "Redux" },
+  { direction: "left", Icon: TbBrandJavascript, title: "JavaScript" },
+
+  { direction: "left", Icon: SiTypescript, title: "TypeScript" },
+  { direction: "down", Icon: AiFillGithub, title: "Git/GitHub" },
+  { direction: "right", Icon: FaNode, title: "Node JS" },
+  { direction: "right", Icon: FaNode, title: "Express JS" },
+  {
+    direction: "left",
+    Icon: SiCodeigniter,
+    title: "PHP (CodeIgniter)",
+  },
+  { direction: "up", Icon: SiTailwindcss, title: "Tailwindcss" },
+  { direction: "up", Icon: SiTailwindcss, title: "Material UI" },
+  {
+    direction: "up",
+    Icon: SiTailwindcss,
+    title: "Headless UI",
+  },
+  {
+    direction: "down",
+    Icon: FaNpm,
+    title: "NPM",
+  },
+];
