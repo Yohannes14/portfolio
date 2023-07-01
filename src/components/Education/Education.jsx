@@ -13,7 +13,7 @@ const Education = () => {
 
         <List>
           <h2>ADDIS ABABA UNIVERSITY</h2>
-          <h4>Bachelor of degree in Information System</h4>
+          <h4>Bachelor of Science Degree in Information System</h4>
           <ul>
             <li>graduated year Sep 2021</li>
             <li>CGPA:3.60</li>
@@ -23,15 +23,26 @@ const Education = () => {
               Object oriented (OOP) programming, AI, Networking.
             </li>
           </ul>
-          <h3>
-            <a
-              href="https://portal.aau.edu.et/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit Website
-            </a>
-          </h3>
+          <div>
+            <h3>
+              <a
+                href="https://portal.aau.edu.et/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See My Tempo
+              </a>
+            </h3>
+            <h3>
+              <a
+                href="https://portal.aau.edu.et/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+            </h3>
+          </div>
         </List>
       </Educations>
     </Container>
@@ -80,15 +91,19 @@ const List = styled.div`
   h4 {
     padding-bottom: 1rem;
   }
-  h3 {
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
-  a {
-    color: #01be96;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
+  div {
+    display: flex;
+    gap: 3rem;
+    h3 {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+    a {
+      color: #01be96;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 `;

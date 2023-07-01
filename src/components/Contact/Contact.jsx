@@ -10,7 +10,7 @@ import {
 import { FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 import { BsTelegram } from "react-icons/bs";
-import home from "../../asset/home.png";
+import home from "../../asset/home1.jpg";
 
 const Contact = () => {
   const scrollUp = () => {
