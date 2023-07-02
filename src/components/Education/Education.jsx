@@ -26,11 +26,11 @@ const Education = () => {
           <div>
             <h3>
               <a
-                href="https://portal.aau.edu.et/"
+                href="https://drive.google.com/file/d/1t95UUqJgT0VkOO2cR99EWwcORj0LLGaV/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                See My Tempo
+                My Tempo
               </a>
             </h3>
             <h3>

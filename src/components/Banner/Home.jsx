@@ -1,11 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { FaLinkedinIn } from "react-icons/fa";
-import { AiFillGithub } from "react-icons/ai";
-import { BsTelegram } from "react-icons/bs";
-import { SiGmail } from "react-icons/si";
 import { Slide } from "react-awesome-reveal";
 import home from "../../asset/home.png";
+import { socialLinks } from "../data/data";
 
 const Home = () => {
   return (
@@ -21,36 +18,28 @@ const Home = () => {
           <p>
             I am Software Developer with two plus years of experience in the
             industry and possesses proficiency in multiple programming languages
-            and tools, such as React JS,Next JS, JavaScript, React Native, PHP
-            (CodeIgniter), TailwindCSS, Node JS (Express js), and Git/GitHub.
-            With his solid experience and strong problem-solving skills, works
-            well in teams, and has excellent communication skills. And also
-            highly motivated to continue learning and improving his skills.I
-            consistently deliver outstanding outcomes in every project
+            and tools, such as React JS,React Native,,Next JS,
+            JavaScript/TypeScript,Node JS (Express js), PHP (CodeIgniter),
+            TailwindCSS/Material UI, and Git/GitHub. With his solid experience
+            and strong problem-solving skills, works well in teams, and has
+            excellent communication skills. And also highly motivated to
+            continue learning and improving his skills.I consistently deliver
+            outstanding outcomes in every project
           </p>
 
           <Social>
             <div className="social-icons">
-              <span>
-                <a href="https://github.com/Yohannes14" target="_blank" rel="noopener noreferrer">
-                  <AiFillGithub size={32} />
-                </a>
-              </span>
-              <span>
-                <a href="https://www.linkedin.com/in/yohannes-degu-300b70259/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedinIn size={32} />
-                </a>
-              </span>
-              <span>
-                <a href="https://web.telegram.org/k/#@Joh14D" target="_blank" rel="noopener noreferrer">
-                  <BsTelegram size={32} />
-                </a>
-              </span>
-              <span>
-                <a href="mailto:miladamiri@gmail.com" target="_blank" rel="noopener noreferrer"> 
-                  <SiGmail size={32} />
-                </a>
-              </span>
+              {socialLinks.map((items) => (
+                <span>
+                  <a
+                    href={items.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {items.icon}
+                  </a>
+                </span>
+              ))}
             </div>
           </Social>
           <button>
@@ -60,7 +49,7 @@ const Home = () => {
           <button>
             {" "}
             <a
-              href="https://drive.google.com/file/d/13mIzyyTEO7Zrs0cJJtBtnJPd4oZGZ_Vn/view?usp=sharing"
+              href="https://drive.google.com/file/d/1E7cUKBVBndQod00XBYUVTsUqgUNHHCaq/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -121,8 +110,7 @@ const Texts = styled.div`
 
   button {
     padding: 0.7rem 2rem;
-    margin-top: 3rem;
-    margin-right: 1rem;
+    margin: 3rem 1rem 3rem 0;
     cursor: pointer;
     background-color: #01be96;
     border: none;
@@ -189,7 +177,7 @@ const Profile = styled.div`
     }
 
     @media (max-width: 640px) {
-      width: 80%;
+      width: 100%;
     }
   }
 

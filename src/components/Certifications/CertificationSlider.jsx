@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ClientSlider = ({ item: { name, link, img_url, disc } }) => {
+const CertificationSlider = ({ item: { name, link, img_url, disc } }) => {
   return (
     <Container>
       <a href={link}>
@@ -15,7 +15,7 @@ const ClientSlider = ({ item: { name, link, img_url, disc } }) => {
   );
 };
 
-export default ClientSlider;
+export default CertificationSlider;
 
 const Container = styled.div`
   border: 1px solid;

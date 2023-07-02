@@ -1,34 +1,32 @@
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
-import { project } from "../data/data";
+import { experince } from "../data/data";
 
-const Projects = () => {
+const Experiences = () => {
   return (
-    <Container id="project">
+    <Container id="experince">
       <Slide direction="down">
-        <h1>Projects Delivered</h1>
+        <h1>Work Experiences</h1>
       </Slide>
-      <Project>
-        {project.map((item, i) => (
+      <Experience>
+        {experince.map((item, i) => (
           <div key={i}>
             <div>
-              <h1>{item.name}</h1>
+              <h1>{item.position}</h1>
+              <span>
+                {item.company} ({item.date})
+              </span>
             </div>
 
             <h4>{item.disc}</h4>
-            <h5>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                Read More
-              </a>
-            </h5>
           </div>
         ))}
-      </Project>
+      </Experience>
     </Container>
   );
 };
 
-export default Projects;
+export default Experiences;
 
 const Container = styled.div`
   width: 80%;
@@ -47,16 +45,8 @@ const Container = styled.div`
     font-size: 1rem;
     padding: 1rem;
   }
-  a {
-    color: #01be96;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
 `;
-const Project = styled.div`
+const Experience = styled.div`
   display: flex;
   align-items: center;
   gap: 3rem;

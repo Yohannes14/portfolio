@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
-import { skill } from "../utils";
+import { skill } from "../data/data";
 
 const Skills = () => {
   return (

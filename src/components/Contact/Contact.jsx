@@ -1,16 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiOutlineArrowUp,
-  AiOutlineMail,
-} from "react-icons/ai";
+import { AiOutlineArrowUp } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
-import { BsTelegram } from "react-icons/bs";
 import home from "../../asset/home1.jpg";
+import { socialLinks } from "../data/data";
 
 const Contact = () => {
   const scrollUp = () => {
@@ -59,50 +54,19 @@ const Contact = () => {
         </div>
         <div className="profiles">
           <div className="icons">
-            <Zoom>
-              <span>
-                <a
-                  href="https://github.com/Yohannes14"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AiFillGithub size={32} />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a
-                  href="https://www.linkedin.com/in/yohannes-degu-300b70259/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AiFillLinkedin size={32} />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a
-                  href="https://web.telegram.org/k/#@Joh14D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <BsTelegram size={32} />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a
-                  href="mailto:miladamiri@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AiOutlineMail size={32} />
-                </a>
-              </span>
-            </Zoom>
+            {socialLinks.map((items) => (
+              <Zoom>
+                <span>
+                  <a
+                    href={items.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {items.icon}
+                  </a>
+                </span>
+              </Zoom>
+            ))}
           </div>
         </div>
         <Fade>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { headerLink } from "../data/data";
 
 const Header = () => {
   const [bar, setBar] = useState(false);
@@ -9,24 +10,11 @@ const Header = () => {
         <h1>JD</h1>
       </Logo>
       <Nav bar={bar} onClick={() => setBar(!bar)}>
-        <span>
-          <a href="#home">Home</a>
-        </span>
-        <span>
-          <a href="#education">Education</a>
-        </span>
-        <span>
-          <a href="#skills">Skills</a>
-        </span>
-        <span>
-          <a href="#project">Work Experiences</a>
-        </span>
-        <span>
-          <a href="#client">Certifications</a>
-        </span>
-        <span>
-          <a href="#contact">Contact Me</a>
-        </span>
+        {headerLink.map((items) => (
+          <span>
+            <a href={items.link}>{items.name}</a>
+          </span>
+        ))}
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">
         <div className="bar"></div>

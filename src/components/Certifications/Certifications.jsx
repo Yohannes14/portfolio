@@ -1,46 +1,12 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
-import ClientSlider from "./ClientSlider";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Slide } from "react-awesome-reveal";
-import front from "../../asset/front.png";
-import git from "../../asset/git.png";
-import html from "../../asset/html.png";
-import cyber from "../../asset/cyber.png";
 
-let clients = [
-  {
-    name: "Introduction to Front-End Development",
-    img_url: front,
-    link: "https://coursera.org/share/b79ba831134bbef23c36768ca071b9d4",
-    disc: `Distinguish between front-end, back-end, and full-stack developers, create and style a webpage with HTML,The benefits of working with UI frameworks.`,
-  },
-  {
-    name: "Version Control",
-    img_url: git,
-    link: "https://coursera.org/share/b0af50e26f744432bcf866027660735d",
-    disc: `Implement version control systems, use a gitHub repository create a github repository,Navigate and configure using the command line, Manage code revisions`,
-  },
-  {
-    name: "Introduction to Cybersecurity",
-    img_url: cyber,
-    link: "https://drive.google.com/file/d/1LA8epyjkWHinliqwddQ3RcvEYAp_ctE1/view?usp=drive_link",
-    disc: `Global implications of cyber threats,ways in which networks are vulnerable to attack, impact of cyber-attacks on industies`,
-  },
-  {
-    name: "HTML5",
-    img_url: html,
-    link: "https://www.udemy.com/certificate/UC-e22a4611-a8f6-476e-b19f-a594eef58d54/",
-    disc: `how to design quality websites using HTML and CSS,fundamentals of coding in CSS and how to style websites beautifully,create customizable forms in HTML5`,
-  },
-  {
-    name: "CSS3 FlexBox Media Queries &CSS Grid",
-    img_url: git,
-    link: "https://www.udemy.com/certificate/UC-830a857a-eeb1-4211-83ad-c60bd02618f4/",
-    disc: `Responsive web design and development, concepts of media queries and how to use them, CSS grid and how to use if=t for responsive web design`,
-  },
-];
+import CertificationSlider from "./CertificationSlider";
+import { certificationData } from "../data/data";
+
 var settings = {
   dots: true,
   infinite: true,
@@ -77,18 +43,20 @@ var settings = {
   ],
 };
 
-const Clients = () => {
+const Certifications = () => {
   const arrowRef = useRef(null);
-  let clientDisc = "";
-  clientDisc = clients.map((item, i) => <ClientSlider item={item} key={i} />);
+  let certificationDisc = "";
+  certificationDisc = certificationData.map((item, i) => (
+    <CertificationSlider item={item} key={i} />
+  ));
   return (
-    <Container id="client">
+    <Container id="certifications">
       <Slide direction="left">
         <h1>Achievements And Certifications </h1>
       </Slide>
-      <Testimonials>
+      <Certification>
         <Slider ref={arrowRef} {...settings}>
-          {clientDisc}
+          {certificationDisc}
         </Slider>
         <Buttons>
           <button onClick={() => arrowRef.current.slickPrev()}>
@@ -98,12 +66,12 @@ const Clients = () => {
             <IoIosArrowForward />
           </button>
         </Buttons>
-      </Testimonials>
+      </Certification>
     </Container>
   );
 };
 
-export default Clients;
+export default Certifications;
 
 const Container = styled.div`
   width: 80%;
@@ -164,7 +132,7 @@ const Container = styled.div`
   }
 `;
 
-const Testimonials = styled.div`
+const Certification = styled.div`
   margin-top: 2rem;
   position: relative;
 `;
