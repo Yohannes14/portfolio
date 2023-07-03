@@ -4,7 +4,7 @@ import styled from "styled-components";
 const CertificationSlider = ({ item: { name, link, img_url, disc } }) => {
   return (
     <Container>
-      <a href={link}>
+      <a href={link} target="_blank" rel="noopener noreferrer">
         <Header>
           <img src={img_url} alt={"kl"} />
         </Header>

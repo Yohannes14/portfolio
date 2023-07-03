@@ -15,6 +15,9 @@ import front from "../../asset/front.png";
 import git from "../../asset/git.png";
 import html from "../../asset/html.png";
 import cyber from "../../asset/cyber.png";
+import aau from "../../asset/aau.png";
+import aau1 from "../../asset/aau1.png";
+import aau2 from "../../asset/aau2.png";
 
 export const experince = [
   {
@@ -135,6 +138,12 @@ export const certificationData = [
     disc: `Distinguish between front-end, back-end, and full-stack developers, create and style a webpage with HTML,The benefits of working with UI frameworks.`,
   },
   {
+    name: "Introduction to Front-End Development",
+    img_url: aau,
+    link: "https://drive.google.com/drive/u/1/folders/1YgFrz3NQpwOFUakWih_0FoFphYRL7YK6",
+    disc: `Distinguish between front-end, back-end, and full-stack developers, create and style a webpage with HTML,The benefits of working with UI frameworks.`,
+  },
+  {
     name: "Version Control",
     img_url: git,
     link: "https://coursera.org/share/b0af50e26f744432bcf866027660735d",
@@ -157,5 +166,17 @@ export const certificationData = [
     img_url: git,
     link: "https://www.udemy.com/certificate/UC-830a857a-eeb1-4211-83ad-c60bd02618f4/",
     disc: `Responsive web design and development, concepts of media queries and how to use them, CSS grid and how to use if=t for responsive web design`,
+  },
+  {
+    name: "Introduction to Front-End Development",
+    img_url: aau1,
+    link: "https://drive.google.com/drive/u/1/folders/1YgFrz3NQpwOFUakWih_0FoFphYRL7YK6",
+    disc: `Distinguish between front-end, back-end, and full-stack developers, create and style a webpage with HTML,The benefits of working with UI frameworks.`,
+  },
+  {
+    name: "Introduction to Front-End Development",
+    img_url: aau2,
+    link: "https://drive.google.com/drive/u/1/folders/1YgFrz3NQpwOFUakWih_0FoFphYRL7YK6",
+    disc: `Distinguish between front-end, back-end, and full-stack developers, create and style a webpage with HTML,The benefits of working with UI frameworks.`,
   },
 ];
