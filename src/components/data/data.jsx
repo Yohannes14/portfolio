@@ -135,13 +135,13 @@ export const certificationData = [
   {
     name: "Introduction to Front-End Development",
     img_url: front,
-    link: "https://coursera.org/share/b79ba831134bbef23c36768ca071b9d4",
+    link: "https://drive.google.com/file/d/1opCUFsvrOn87LrA03IoEf8T0lMs9xf3t/view?usp=sharing",
     disc: `Distinguish between front-end, back-end, and full-stack developers, create and style a webpage with HTML,The benefits of working with UI frameworks.`,
   },
   {
     name: "Version Control",
     img_url: git,
-    link: "https://coursera.org/share/b0af50e26f744432bcf866027660735d",
+    link: "https://drive.google.com/file/d/1OX6pGYZhxtvEcZYwM2jxi-0yBsKCmrKP/view?usp=sharing",
     disc: `Implement version control systems, use a gitHub repository create a github repository,Navigate and configure using the command line, Manage code revisions`,
   },
   {
