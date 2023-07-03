@@ -8,7 +8,7 @@ const Skills = () => {
     <Container id="skills">
       <Slide direction="down">
         <h1>What I Do</h1>
-        <h3>FRONTEND DEVELOPER AND WHO WANTS TO EXPLORE EVERY TECH STACK</h3>
+        <h3>Full Stack DEVELOPER AND WHO WANTS TO EXPLORE EVERY TECH STACK</h3>
       </Slide>
       <Cards>
         {skill.map((item) => (
