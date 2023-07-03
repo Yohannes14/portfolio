@@ -26,11 +26,11 @@ const Education = () => {
           <div>
             <h3>
               <a
-                href="https://drive.google.com/file/d/1t95UUqJgT0VkOO2cR99EWwcORj0LLGaV/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1t95UUqJgT0VkOO2cR99EWwcORj0LLGaV/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                My Tempo
+                Degree Certificate
               </a>
             </h3>
             <h3>

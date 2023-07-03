@@ -4,7 +4,7 @@ import { project } from "../data/data";
 
 const Projects = () => {
   return (
-    <Container id="project">
+    <Container id="projects">
       <Slide direction="down">
         <h1>Projects Delivered</h1>
       </Slide>

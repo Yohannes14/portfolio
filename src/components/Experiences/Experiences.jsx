@@ -4,7 +4,7 @@ import { experince } from "../data/data";
 
 const Experiences = () => {
   return (
-    <Container id="experince">
+    <Container id="experinces">
       <Slide direction="down">
         <h1>Work Experiences</h1>
       </Slide>

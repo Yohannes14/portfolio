@@ -16,15 +16,21 @@ const Home = () => {
           <h3>SOFTWARE DEVELOPER</h3>
 
           <p>
-            I am Software Developer with two plus years of experience in the
-            industry and possesses proficiency in multiple programming languages
-            and tools, such as React JS,React Native,Next JS,
-            JavaScript/TypeScript,Node JS (Express js), PHP (CodeIgniter),
-            TailwindCSS/Material UI, and Git/GitHub. With his solid experience
-            and strong problem-solving skills, works well in teams, and has
-            excellent communication skills. And also highly motivated to
-            continue learning and improving his skills.I consistently deliver
-            outstanding outcomes in every project
+            I am a Software Developer with over two years of industry
+            experience. Throughout my career, I have gained proficiency in
+            multiple programming languages and tools, including React JS, React
+            Native, Next JS, JavaScript, TypeScript, Node JS, Express JS, PHP,
+            CodeIgniter, Tailwind CSS/Material UI, Headless UI, Git/GitHub,
+            MySQL, and NoSQL databases. With a solid foundation in software
+            development and strong problem-solving skills, effective teamwork
+            with excellent communication skills. My motivation to continually
+            learn and improve my skills drives me to stay updated with the
+            latest technologies and industry trends. By staying ahead of the
+            curve, I can deliver innovative solutions and enhance the overall
+            quality of my work. Consistently delivering outstanding outcomes in
+            every project is a key attribute of my work ethic. I prioritize
+            attention to detail, maintain high code quality standards, and
+            ensure the timely completion of projects.
           </p>
 
           <Social>
