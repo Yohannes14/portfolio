@@ -18,7 +18,7 @@ const Home = () => {
           <p>
             I am Software Developer with two plus years of experience in the
             industry and possesses proficiency in multiple programming languages
-            and tools, such as React JS,React Native,,Next JS,
+            and tools, such as React JS,React Native,Next JS,
             JavaScript/TypeScript,Node JS (Express js), PHP (CodeIgniter),
             TailwindCSS/Material UI, and Git/GitHub. With his solid experience
             and strong problem-solving skills, works well in teams, and has
