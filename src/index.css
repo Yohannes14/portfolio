@@ -14,13 +14,13 @@
   ---background: #191923;
 }
 
-body{
+/* body{
   width: 100%;
   background-color: var(---background);
   color: #fff;
   overflow-x: hidden;
   position: relative;
-}
+} */
 
 .green {
   color: #01be96;

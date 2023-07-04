@@ -8,6 +8,7 @@ import Education from "./components/Education/Education";
 import Experiences from "./components/Experiences/Experiences";
 import Certifications from "./components/Certifications/Certifications";
 function App() {
+  
   return (
     <Container>
       <Banner>
@@ -31,7 +32,13 @@ function App() {
 
 export default App;
 
-const Container = styled.div``;
+const Container = styled.div`
+  width: 100%;
+  background-color: #191923;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+`;
 const Banner = styled.div`
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
   height: auto;
