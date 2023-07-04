@@ -13,17 +13,18 @@ function App() {
       <Banner>
         <Header />
         <Home />
-      </Banner>
-      <Education />
-      <Skills />
-      <LightColor>
+
+        <Education />
+        <Skills />
+        {/* <LightColor> */}
         <Experiences />
-      </LightColor>
-      <Projects />
-      <Certifications />
-      <LightColor>
+        {/* </LightColor> */}
+        <Projects />
+        <Certifications />
+        {/* <LightColor> */}
         <Contact />
-      </LightColor>
+        {/* </LightColor> */}
+      </Banner>
     </Container>
   );
 }
