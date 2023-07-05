@@ -4,7 +4,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
-import home from "../../asset/home1.jpg";
+import home from "../../asset/home.png";
 import { socialLinks } from "../data/data";
 
 const Contact = () => {

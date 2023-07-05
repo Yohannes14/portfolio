@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
-import home from "../../asset/home.png";
+import home from "../../asset/home1.jpg";
 import { socialLinks } from "../data/data";
 
 const Home = () => {

@@ -19,6 +19,8 @@ import aau from "../../asset/aau.png";
 import aau1 from "../../asset/aau1.png";
 import aau2 from "../../asset/aau2.png";
 import css from "../../asset/css.png";
+import js from "../../asset/js.png";
+import react from "../../asset/react.png";
 
 export const experince = [
   {
@@ -137,6 +139,18 @@ export const certificationData = [
     img_url: front,
     link: "https://drive.google.com/file/d/1opCUFsvrOn87LrA03IoEf8T0lMs9xf3t/view?usp=sharing",
     disc: `Distinguish between front-end, back-end, and full-stack developers, create and style a webpage with HTML,The benefits of working with UI frameworks.`,
+  },
+  {
+    name: "Programming with JavaScript",
+    img_url: js,
+    link: "https://drive.google.com/file/d/1uxvzu9NoUL6dLkQ708GpmXZeYzIDI9sV/view?usp=sharing",
+    disc: `Explain the importance of JavaScript in software development such as how to write JavaScript code inside the browser, how to write basic JavaScript code: List common operators, conditional statements and loops, use variables and output their values in the console`,
+  },
+  {
+    name: "React Basics",
+    img_url: react,
+    link: "https://drive.google.com/file/d/1OX6pGYZhxtvEcZYwM2jxi-0yBsKCmrKP/view?usp=sharing",
+    disc: `Explain the concepts behind React and component architecture,Create a component to serve a specific purpose,Use and manipulate props and components to effect visual results. how to use assets within an app to apply styling and functional components`,
   },
   {
     name: "Version Control",

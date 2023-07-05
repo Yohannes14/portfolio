@@ -11,7 +11,7 @@ function App() {
   
   return (
     <Container>
-      <Banner>
+      <LightColor>
         <Header />
         <Home />
 
@@ -25,7 +25,7 @@ function App() {
         {/* <LightColor> */}
         <Contact />
         {/* </LightColor> */}
-      </Banner>
+      </LightColor>
     </Container>
   );
 }
