@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
-import home from "../../asset/home1.jpg";
+import home from "../../asset/home.png";
 import { socialLinks } from "../data/data";
 
 const Home = () => {
@@ -17,20 +17,16 @@ const Home = () => {
 
           <p>
             I am a Software Developer with over two years of industry
-            experience. Throughout my career, I have gained proficiency in
-            multiple programming languages and tools, including React JS, React
-            Native, Next JS, JavaScript, TypeScript, Node JS, Express JS, PHP,
-            CodeIgniter, Tailwind CSS/Material UI, Headless UI, Git/GitHub,
-            MySQL, and NoSQL databases. With a solid foundation in software
-            development and strong problem-solving skills, effective teamwork
-            with excellent communication skills. My motivation to continually
-            learn and improve my skills drives me to stay updated with the
-            latest technologies and industry trends. By staying ahead of the
-            curve, I can deliver innovative solutions and enhance the overall
-            quality of my work. Consistently delivering outstanding outcomes in
-            every project is a key attribute of my work ethic. I prioritize
-            attention to detail, maintain high code quality standards, and
-            ensure the timely completion of projects.
+            experience. I have expertise in a range of programming languages and
+            tools, including React JS, React Native, Next JS, JavaScript,
+            TypeScript, Node JS, Express JS, PHP, CodeIgniter, Tailwind
+            CSS/Material UI, Headless UI, Git/GitHub, MySQL, and NoSQL
+            databases. I am a strong problem-solver and an effective team player
+            with excellent communication skills. I am highly motivated to
+            continuously learn and stay updated with the latest technologies and
+            industry trends. I consistently deliver outstanding outcomes by
+            maintaining high code quality standards and ensuring timely project
+            completion.
           </p>
 
           <Social>
