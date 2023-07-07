@@ -45,6 +45,11 @@ export const project = [
     link: "https://aaronhabesh.com/",
   },
   {
+    name: "Real State (Personal Project)",
+    disc: `Web based Real State App, which includes rental homes and for-sale properties, advanced property filtering, property details page. Used React JS, Next js,ChakraUI for User Interface, and Rapid Api`,
+    link: "https://real-state-two.vercel.app/",
+  },
+  {
     name: "awakilo",
     disc: `Web based website Used to extention service for coffee farmers...`,
     link: "https://awakilo.com/",
