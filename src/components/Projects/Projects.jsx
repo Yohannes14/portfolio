@@ -57,8 +57,8 @@ const Container = styled.div`
   }
 `;
 const Project = styled.div`
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
   padding-top: 1rem;
   margin: 0 auto;
