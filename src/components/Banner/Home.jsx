@@ -16,7 +16,7 @@ const Home = () => {
           <h3>SOFTWARE DEVELOPER</h3>
 
           <p>
-            I am a Software Developer with over two years of industry
+            I am a Software Developer with over three years of industry
             experience. I have expertise in a range of programming languages and
             tools, including React JS, React Native, Next JS, JavaScript,
             TypeScript, Node JS, Express JS, PHP, CodeIgniter, Tailwind
